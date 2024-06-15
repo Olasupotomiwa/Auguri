@@ -21,7 +21,7 @@ const Hero = () => {
       <Flex w="full" direction={{ base: "column", md: "row" }}  px={{ base: 4, md: 8 }}
       py={8}>
         <Box flex="1" textAlign='left' mt={{base: '0', md: '14'}}>
-        <Heading fontSize={{ base: "40px", md: "60px" }} fontWeight="bold">
+        <Heading fontSize={{ base: "40px", md: "60px" }} fontWeight="bold" fontFamily={"Poppins"}>
             <Text as="span" position="relative" display="inline-block">
               Explore the world
               <Box
@@ -33,13 +33,14 @@ const Hero = () => {
                 height="8px"
                 bg="gold"
                 zIndex="-1"
+                bgGradient="linear(to-r, #FFD700, #FFA500)"
               />
             </Text>{" "}
             with{" "}
-            <Box as="span" color="#9D7C49">
+            <Box as="span" color="#9D7C49" fontFamily={"Bebas Neue"}>
               AUGURI TRAVEL AGENCY &
             </Box>{" "}
-            <Box as="span" color="#9D7C49">
+            <Box as="span" color="#9D7C49" fontFamily={"Bebas Neue"}>
               LAWAL TOUR GUIDE !
             </Box>
           </Heading>
