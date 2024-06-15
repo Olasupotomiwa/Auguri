@@ -23,7 +23,7 @@ export default function Navbar() {
         color="#000000"
         minH={'60px'}
         py={{ base: 2 }}
-        px={{ base: 4, md: 8 }}  // Adjusting padding for mobile and desktop
+        px={{ base: 2, md: 8 }}  // Adjusting padding for mobile and desktop
         align={'center'}
         justify={{ base: 'space-between', md: 'center' }}
       >

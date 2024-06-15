@@ -14,10 +14,12 @@ const Hero = () => {
       bgPosition="center"
       bgRepeat="no-repeat"
       bgSize="cover"
-      px={{ base: 4, md: 8 }}
-      py={8}
+     
+     
+     
     >
-      <Flex w="full" direction={{ base: "column", md: "row" }}>
+      <Flex w="full" direction={{ base: "column", md: "row" }}  px={{ base: 4, md: 8 }}
+      py={8}>
         <Box flex="1" textAlign='left' mt={{base: '0', md: '14'}}>
         <Heading fontSize={{ base: "40px", md: "60px" }} fontWeight="bold">
             <Text as="span" position="relative" display="inline-block">
@@ -76,8 +78,8 @@ const Hero = () => {
       <Box pos={'relative'}>
       <Box
       position="fixed"
-      bottom={8}
-      right={8}
+      bottom={{base: '6', md: '8'}}
+      right={{base: '6', md: '8'}}
       bg="#9D7C49"
       color="white"
       borderRadius="50%"

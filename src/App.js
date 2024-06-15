@@ -6,7 +6,7 @@ import Homepage from './Homepage';
 
 function App() {
   return (
-    <Container maxW="1200px">
+    <Container maxW="1200px" px={0}>
     <>
       <NavBar />
      
