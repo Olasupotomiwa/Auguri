@@ -14,3 +14,66 @@
     transform: translateY(0);
   }
 }
+
+
+
+.react-multi-carousel-dot-list{
+  justify-content: center !important;
+  left:2rem !important;
+  bottom:1rem !important;
+  gap: 0.4rem !important;
+}
+
+/* Custom style for carousel indicators (dots) */
+.custom-dot-list .react-multi-carousel {
+  list-style: none;
+  padding-top: 20px;
+  display: flex; 
+  justify-content: flex-start;
+}
+
+.custom-dot {
+  /* height: 16px !important; */
+  /* width: 4px !important; */
+  /* background-color: white; */
+  display: flex; 
+  justify-content: flex-start;
+  /* border-radius: 100% !important; */
+}
+
+.custom-dot-list li {
+  margin: 10px 2px;
+}
+
+/* Active dot style */
+.custom-dot-list .react-multi-carousel-dot--active button {
+  background-color: white; /* Set the active bullet to white */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* * Custom style for carousel indicators (dots)  */
+.custom-dot-list2 .react-multi-carousel-dot {
+  display: flex; 
+  justify-content: end;
+ 
+}
+
+.custom-dot2 {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  display: flex; 
+  justify-content: flex-start;
+  
+}
+
+.custom-dot-list2 li {
+  margin: 10px 2px;
+}
+
+/* Active dot style */
+.custom-dot-list2 .react-multi-carousel-dot--active button {
+  background-color: #008ECC; 
+  box-shadow: 0 0 6px #008ECC;
+}
