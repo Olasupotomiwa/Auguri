@@ -4,6 +4,7 @@ import Hero from './Hero';
 import VacationPlanner from './VacationPanel';
 import TripOptions from './TripOptions';
 import SearchPanel from './SearchPanel'
+import Services from './Services'
 const Homepage = () => {
   return (
     <Box >
@@ -11,6 +12,7 @@ const Homepage = () => {
      <VacationPlanner/>
      <TripOptions/>
      <SearchPanel/>
+     <Services/>
     </Box>
   );
 };
