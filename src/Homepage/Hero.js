@@ -95,7 +95,9 @@ const Hero = () => {
       fontFamily={"Poppins"}
       fontWeight={"600"}
       animation="bubble 3s infinite"
-      outline={"none"}
+      outline='0'
+      _focus={{outline: 'none'}}
+        _hover={{outline: 'none'}}
      
     >
       <Flex flexDirection="column" alignItems="center" >
