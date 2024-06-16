@@ -1,10 +1,12 @@
-import { Box, Flex, Heading, Text, Input, Button, Icon, InputGroup, InputLeftElement, HStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Input, Button, Icon, InputGroup, InputLeftElement, HStack , useBreakpointValue } from "@chakra-ui/react";
 import { SearchIcon } from '@chakra-ui/icons';
 import { FaMapMarkerAlt} from 'react-icons/fa';
 
 const VacationSection = () => {
+
+  const isMobile = useBreakpointValue({ base: true, md: false });
   return (
-    <Box bg="#f2f2f2" p={8} my={10} fontFamily={"Poppins"}>
+    <Box bg="#f2f2f2" p={12} my={10} fontFamily={"Poppins"}>
       <Box textAlign="center" mb={6}>
         <Text fontSize="30px" color="#9D7C49" fontFamily={"Reenie Beanie"}>
           Choose your trip
@@ -19,11 +21,18 @@ const VacationSection = () => {
         </Text>
         </Box>
       </Box>
+      
+      <Box>
       <Box bg="white" p={8} borderRadius="md" boxShadow="md">
-        <Flex direction={{ base: "column", md: "row" }} align={{ base: "center", md: "center" }} justify={{ base: "center", md: "space-around" }} gap={4}>
+        <Flex
+          direction='row'
+          align="center"
+          justify={{ base: "center", md: "space-around" }}
+          gap={4}
+        >
           <InputGroup w={'200px'}>
             <InputLeftElement pointerEvents="none">
-              <Icon as={SearchIcon} color="#9D7C49" fontSize={"20px"}  />
+              <Icon as={SearchIcon} color="#9D7C49" fontSize={"20px"} />
             </InputLeftElement>
             <Input
               type="text"
@@ -37,10 +46,27 @@ const VacationSection = () => {
           <HStack>
             <Icon as={FaMapMarkerAlt} color="#9D7C49" fontSize={"34px"} />
             <Box>
-            <Text fontWeight={"600"}>Destination</Text>
-            <Text color={"#6E6E6E"}>All destinations</Text>
+              <Text fontWeight={"600"}>Destination</Text>
+              <Text color={"#6E6E6E"} fontSize={"12px"}>All destinations</Text>
             </Box>
           </HStack>
+          {!isMobile && (
+            <Button
+              color={"white"}
+              bg={"#9D7C49"}
+              variant="solid"
+              fontWeight={"400"}
+              size="md"
+              px={10}
+              py={6}
+            >
+              Proceed to book
+            </Button>
+          )}
+        </Flex>
+      </Box>
+      {isMobile && (
+        <Box display="flex" justifyContent="center" mt={4}>
           <Button
             color={"white"}
             bg={"#9D7C49"}
@@ -48,11 +74,13 @@ const VacationSection = () => {
             fontWeight={"400"}
             size="md"
             px={10}
+            py={6}
           >
             Proceed to book
           </Button>
-        </Flex>
-      </Box>
+        </Box>
+      )}
+    </Box>
     </Box>
   );
 };

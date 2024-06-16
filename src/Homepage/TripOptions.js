@@ -29,7 +29,7 @@ const TripOptions = () => {
 
 const ImageBox = ({ imageSrc }) => (
   <Box>
-    <Image src={imageSrc} w={"188px"} objectFit={"cover"} borderRadius="full" />
+    <Image src={imageSrc} w={{base: '160px', md: '250px'}} objectFit={"cover"} borderRadius="full" />
   </Box>
 );
 
