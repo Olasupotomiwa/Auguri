@@ -7,6 +7,7 @@ import SearchPanel from './SearchPanel'
 import Services from './Services'
 import GradientComponent from './GradientBG';
 import TestimonialPage from './Testimonials';
+import Footer from './Footer';
 
 const Homepage = () => {
   return (
@@ -18,6 +19,7 @@ const Homepage = () => {
      <Services/>
      <GradientComponent/>
      <TestimonialPage/>
+     <Footer/>
     </Box>
   );
 };
