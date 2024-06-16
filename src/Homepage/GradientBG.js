@@ -24,12 +24,11 @@ import {
         fontFamily="Poppins"
         bgSize="cover"
         bgPosition="center"
-        p={8}
+        p={{base: '1' , md: '4'}}
         my={12}
       >
         <Flex
           width="100%"
-          maxWidth="1200px"
           boxShadow="lg"
           flexDirection={{ base: "column", md: "row" }}
         >
