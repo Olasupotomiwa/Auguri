@@ -96,8 +96,8 @@ const Hero = () => {
       fontWeight={"600"}
       animation="bubble 3s infinite"
       outline='0'
-      _focus={{outline: 'none'}}
-        _hover={{outline: 'none'}}
+      _focus={{outline: '0'}}
+        _hover={{outline: '0'}}
      
     >
       <Flex flexDirection="column" alignItems="center" >
