@@ -37,10 +37,10 @@ const Hero = () => {
               />
             </Text>{" "}
             with{" "}
-            <Box as="span" color="#9D7C49" fontFamily={"Bebas Neue"}>
+            <Box as="span" color="#9D7C49" fontFamily={"Francois One"}>
               AUGURI TRAVEL AGENCY &
             </Box>{" "}
-            <Box as="span" color="#9D7C49" fontFamily={"Bebas Neue"}>
+            <Box as="span" color="#9D7C49" fontFamily={"Francois One"}>
               LAWAL TOUR GUIDE !
             </Box>
           </Heading>
@@ -95,6 +95,7 @@ const Hero = () => {
       fontFamily={"Poppins"}
       fontWeight={"600"}
       animation="bubble 3s infinite"
+      outline={"none"}
      
     >
       <Flex flexDirection="column" alignItems="center" >
