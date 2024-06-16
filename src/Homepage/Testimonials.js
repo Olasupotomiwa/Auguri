@@ -3,7 +3,7 @@ import { Box, Flex, Heading, Text, Avatar, IconButton } from "@chakra-ui/react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import backgroundImage from "../assets/Testimonial.png";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import {  ArrowForwardIcon, ArrowBackIcon } from '@chakra-ui/icons';
 import HeroCustomDot from "./HeroCustomDot";
 
 const TestimonialPage = () => {
@@ -44,7 +44,7 @@ const TestimonialPage = () => {
       justifyContent="center"
       fontFamily="Poppins"
       padding={{base: '2', md: '6'}}
-      zIndex={99}
+     my={10}
     >
       <Box maxWidth="540px" width="100%" p={0}>
         <Box p={8} mt={20} textAlign={"center"}>
@@ -96,7 +96,7 @@ const TestimonialPage = () => {
           </Carousel>
           <IconButton
             aria-label="Previous"
-            icon={<FaChevronLeft />}
+            icon={<ArrowBackIcon />}
             onClick={() => setSelectedSlide((selectedSlide - 1 + testimonials.length) % testimonials.length)}
             position="absolute"
             left={0}
@@ -110,7 +110,7 @@ const TestimonialPage = () => {
           />
           <IconButton
             aria-label="Next"
-            icon={<FaChevronRight />}
+            icon={<ArrowForwardIcon />}
             onClick={() => setSelectedSlide((selectedSlide + 1) % testimonials.length)}
             position="absolute"
             right={0}
@@ -124,7 +124,7 @@ const TestimonialPage = () => {
           />
         </Box>
         {/* Custom dot component rendered below the carousel */}
-        <Flex justifyContent="center" mt={4} mb={10}>
+        <Flex justifyContent="center" mt={2} mb={5}>
           {testimonials.map((_, dotIndex) => (
             <HeroCustomDot
               key={dotIndex}

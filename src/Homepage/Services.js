@@ -9,6 +9,7 @@ import Guide from "../assets/guide.png";
 import Visa from "../assets/visa.png";
 import Sport from "../assets/sport.png";
 import Health from "../assets/health.png";
+import Cart from "../assets/cart.png";
 
 const CenteredCardContainer = () => {
   const [cardContent] = useState([
@@ -18,10 +19,15 @@ const CenteredCardContainer = () => {
       text: "Our Travel Agency specializes in providing customers with the best deals on airline tickets",
     },
     {
-        imageSrc: Guide,
-        heading: "Lawal Tour Guide",
-        text: "Our team of experts will take you off the beaten path and show you their city..",
-      },
+      imageSrc: Guide,
+      heading: "Lawal Tour Guide",
+      text: "Our team of experts will take you off the beaten path and show you their city..",
+    },
+    {
+      imageSrc: Cart,
+      heading: "Personal Shopper",
+      text: "Enjoy personalized shopping with our expert personal shoppers, matching items to your unique style.",
+    },
     {
       imageSrc: Ocean,
       heading: "Ocean Cruises",
@@ -62,7 +68,7 @@ const CenteredCardContainer = () => {
   return (
     <Box>
       <Box>
-        <Box textAlign={'center'}>
+        <Box textAlign={"center"}>
           <Text
             color={"#9D7C49"}
             fontSize={"30px"}
@@ -70,7 +76,9 @@ const CenteredCardContainer = () => {
           >
             Let us help you plan for next adventure
           </Text>
-          <Heading fontFamily={"Francois One"} py={2}>Services we offer</Heading>
+          <Heading fontFamily={"Francois One"} py={2}>
+            Services we offer
+          </Heading>
         </Box>
       </Box>
       <Box
