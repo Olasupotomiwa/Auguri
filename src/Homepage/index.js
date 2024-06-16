@@ -1,12 +1,16 @@
 import React from 'react';
 import { Box } from '@chakra-ui/react';
 import Hero from './Hero';
-
+import VacationPlanner from './VacationPanel';
+import TripOptions from './TripOptions';
+import SearchPanel from './SearchPanel'
 const Homepage = () => {
   return (
     <Box >
       <Hero />
-      {/* Add more content for the homepage here */}
+     <VacationPlanner/>
+     <TripOptions/>
+     <SearchPanel/>
     </Box>
   );
 };
