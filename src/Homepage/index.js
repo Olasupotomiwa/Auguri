@@ -5,6 +5,9 @@ import VacationPlanner from './VacationPanel';
 import TripOptions from './TripOptions';
 import SearchPanel from './SearchPanel'
 import Services from './Services'
+import GradientComponent from './GradientBG';
+import TestimonialPage from './Testimonials';
+
 const Homepage = () => {
   return (
     <Box >
@@ -13,6 +16,8 @@ const Homepage = () => {
      <TripOptions/>
      <SearchPanel/>
      <Services/>
+     <GradientComponent/>
+     <TestimonialPage/>
     </Box>
   );
 };

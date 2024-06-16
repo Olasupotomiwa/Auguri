@@ -18,6 +18,11 @@ const CenteredCardContainer = () => {
       text: "Our Travel Agency specializes in providing customers with the best deals on airline tickets",
     },
     {
+        imageSrc: Guide,
+        heading: "Lawal Tour Guide",
+        text: "Our team of experts will take you off the beaten path and show you their city..",
+      },
+    {
       imageSrc: Ocean,
       heading: "Ocean Cruises",
       text: "Luxurious and comfortable way of travel, andpassengers can enjoy stunning views of the sea.",
@@ -36,11 +41,6 @@ const CenteredCardContainer = () => {
       imageSrc: Insurance,
       heading: "Travel Insurance",
       text: "Travel insurance is an essential part of any trip, providing peace of mind and protection.",
-    },
-    {
-      imageSrc: Guide,
-      heading: "Local Guide",
-      text: "We can connect you with guides who will take you off the best path and show you their city.",
     },
     {
       imageSrc: Visa,
@@ -102,7 +102,7 @@ const CenteredCardContainer = () => {
             <Heading fontSize={"18px"} size="lg" mb={2}>
               {content.heading}
             </Heading>
-            <Text fontSize="md" color="#6E6E6E">
+            <Text fontSize="16px" color="#6E6E6E">
               {content.text}
             </Text>
           </Box>
