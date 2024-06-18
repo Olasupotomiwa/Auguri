@@ -1,6 +1,8 @@
+// TestimonialPage.jsx
 import React, { useState } from "react";
 import { Box, Flex, Heading, Text, Avatar, IconButton } from "@chakra-ui/react";
 import { Carousel } from "react-responsive-carousel";
+import { useSwipeable } from "react-swipeable";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import backgroundImage from "../assets/Testimonial.png";
 import { ArrowForwardIcon, ArrowBackIcon } from "@chakra-ui/icons";
@@ -30,9 +32,21 @@ const TestimonialPage = () => {
       name: "Esohe Chibuike",
       avatarUrl: "https://randomuser.me/api/portraits/men/3.jpg",
       text: "Auguri Travel Agency provided excellent customer service from start to finish. They were responsive to our inquiries and ensured our trip was unforgettable. 5 stars!",
-      position: "Business   Consultant",
+      position: "Business Consultant",
     },
   ];
+
+  // Swipe handlers
+  const handlers = useSwipeable({
+    onSwipedLeft: () =>
+      setSelectedSlide((prev) => (prev + 1) % testimonials.length),
+    onSwipedRight: () =>
+      setSelectedSlide(
+        (prev) => (prev - 1 + testimonials.length) % testimonials.length
+      ),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
 
   return (
     <Box
@@ -46,13 +60,13 @@ const TestimonialPage = () => {
       padding={{ base: "2", md: "6" }}
       my={10}
     >
-      <Box maxWidth="540px" width="100%" p={0}>
+      <Box maxWidth="540px" width="100%" p={0} {...handlers}>
         <Box p={8} mt={20} textAlign={"center"}>
           <Text color={"#DF6951"} fontWeight={500}>
             PROMOTION
           </Text>
           <Heading fontFamily={"Francois One"} paddingY={2}>
-            See What Our Client Say About Us
+            See What Our Clients Say About Us
           </Heading>
         </Box>
         <Box position="relative">
@@ -64,9 +78,7 @@ const TestimonialPage = () => {
             showIndicators={false} // Disable default indicators
             infiniteLoop={true}
             autoPlay={true}
-            interval={5000}
-            transitionTime={500}
-            stopOnHover={true}
+            swipeable={false} // Disable default swipe behavior
           >
             {testimonials.map((testimonial) => (
               <Box key={testimonial.id} p={4}>
