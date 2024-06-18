@@ -3,7 +3,7 @@ import { Box, Flex, Heading, Text, Avatar, IconButton } from "@chakra-ui/react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import backgroundImage from "../assets/Testimonial.png";
-import {  ArrowForwardIcon, ArrowBackIcon } from '@chakra-ui/icons';
+import { ArrowForwardIcon, ArrowBackIcon } from "@chakra-ui/icons";
 import HeroCustomDot from "./HeroCustomDot";
 
 const TestimonialPage = () => {
@@ -13,24 +13,24 @@ const TestimonialPage = () => {
   const testimonials = [
     {
       id: 1,
-      name: "John Doe",
+      name: "Adebayo Shekinat",
       avatarUrl: "https://randomuser.me/api/portraits/men/1.jpg",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et dui in neque condimentum venenatis. Vivamus nec lectus vel augue mattis vulputate.",
-      position: 'Designer'
+      text: "Booking with Auguri Travel was a breeze. Their knowledgeable staff helped us find the perfect destination and accommodation. Looking forward to our next adventure with them!",
+      position: "Business Tycoon",
     },
     {
       id: 2,
-      name: "Jane Smith",
+      name: "Charles Adeoye",
       avatarUrl: "https://randomuser.me/api/portraits/women/2.jpg",
-      text: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce nec lacus accumsan, fermentum justo et, mattis velit.",
-      position: 'Designer'
+      text: "Our experience with Auguri Travel was fantastic. They tailored our itinerary to our preferences and budget, ensuring every aspect of our journey was well-planned and enjoyable.",
+      position: "Educationist",
     },
     {
       id: 3,
-      name: "David Johnson",
+      name: "Esohe Chibuike",
       avatarUrl: "https://randomuser.me/api/portraits/men/3.jpg",
-      text: "Nulla tincidunt euismod orci non commodo. Suspendisse potenti. Mauris accumsan feugiat augue non fermentum. Proin nec neque at arcu ultrices hendrerit.",
-      position: 'Designer'
+      text: "Auguri Travel Agency provided excellent customer service from start to finish. They were responsive to our inquiries and ensured our trip was unforgettable. 5 stars!",
+      position: "Business   Consultant",
     },
   ];
 
@@ -43,8 +43,8 @@ const TestimonialPage = () => {
       alignItems="center"
       justifyContent="center"
       fontFamily="Poppins"
-      padding={{base: '2', md: '6'}}
-     my={10}
+      padding={{ base: "2", md: "6" }}
+      my={10}
     >
       <Box maxWidth="540px" width="100%" p={0}>
         <Box p={8} mt={20} textAlign={"center"}>
@@ -80,14 +80,28 @@ const TestimonialPage = () => {
                     name={testimonial.name}
                     size="xl"
                     mb={4}
-                    border={'5px'}
+                    border={"5px"}
                     borderColor={"white"}
                   />
-                  <Text textAlign="center" px={8}>{testimonial.text}</Text>
-                  <Text fontSize={'12px'} fontWeight={"700"} mt={2} textAlign="center" fontFamily={"Francois One"}>
+                  <Text textAlign="center" px={8}>
+                    {testimonial.text}
+                  </Text>
+                  <Text
+                    fontSize={"12px"}
+                    fontWeight={"700"}
+                    mt={2}
+                    textAlign="center"
+                    fontFamily={"Francois One"}
+                  >
                     {testimonial.name}
                   </Text>
-                  <Text fontSize={'12px'} fontWeight={"600"} mb={2} textAlign="center" fontFamily={"Francois One"}>
+                  <Text
+                    fontSize={"12px"}
+                    fontWeight={"600"}
+                    mb={2}
+                    textAlign="center"
+                    fontFamily={"Francois One"}
+                  >
                     {testimonial.position}
                   </Text>
                 </Flex>
@@ -97,7 +111,11 @@ const TestimonialPage = () => {
           <IconButton
             aria-label="Previous"
             icon={<ArrowBackIcon />}
-            onClick={() => setSelectedSlide((selectedSlide - 1 + testimonials.length) % testimonials.length)}
+            onClick={() =>
+              setSelectedSlide(
+                (selectedSlide - 1 + testimonials.length) % testimonials.length
+              )
+            }
             position="absolute"
             left={0}
             top="50%"
@@ -111,7 +129,9 @@ const TestimonialPage = () => {
           <IconButton
             aria-label="Next"
             icon={<ArrowForwardIcon />}
-            onClick={() => setSelectedSlide((selectedSlide + 1) % testimonials.length)}
+            onClick={() =>
+              setSelectedSlide((selectedSlide + 1) % testimonials.length)
+            }
             position="absolute"
             right={0}
             top="50%"

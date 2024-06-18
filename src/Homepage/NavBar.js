@@ -10,8 +10,9 @@ import {
   useDisclosure,
   Image,
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, CalendarIcon, InfoOutlineIcon, PhoneIcon, AtSignIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon, } from '@chakra-ui/icons';
 import { NavLink, useNavigate } from 'react-router-dom';
+import { FaHome, FaInfoCircle, FaEnvelope, FaCalendarCheck } from 'react-icons/fa';
 import Logo from '../assets/Logo.png';
 
 export default function Navbar() {
@@ -65,7 +66,7 @@ export default function Navbar() {
             }}
             display={{ base: 'none', md: 'inline-flex' }}
             ml={4}
-            leftIcon={<CalendarIcon />}
+            leftIcon={<FaCalendarCheck />}
           >
             Book Now
           </Button>
@@ -155,7 +156,7 @@ const MobileNav = ({ onClose }) => {
         }}
         mt={4}
         w={'full'}
-        leftIcon={<CalendarIcon />}
+        leftIcon={<FaCalendarCheck />}
         onClick={onClose}
       >
         Book Now
@@ -168,16 +169,16 @@ const NAV_ITEMS = [
   {
     label: 'Home',
     href: '/',
-    icon: <AtSignIcon />,
+    icon: <FaHome size={20}  />,
   },
   {
     label: 'About',
     href: '/about',
-    icon: <InfoOutlineIcon />,
+    icon: <FaInfoCircle size={20}/>,
   },
   {
     label: 'Contact',
     href: '/contact',
-    icon: <PhoneIcon />,
+    icon: <FaEnvelope size={18}/>,
   },
 ];
