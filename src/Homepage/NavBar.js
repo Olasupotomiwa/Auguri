@@ -173,7 +173,7 @@ const NAV_ITEMS = [
   },
   {
     label: 'About',
-    href: '/about',
+    href: '/about-us',
     icon: <FaInfoCircle size={20}/>,
   },
   {

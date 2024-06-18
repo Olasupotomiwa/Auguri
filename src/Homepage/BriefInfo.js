@@ -26,7 +26,7 @@ const BriefInfo = () => {
         including flight bookings, hotel reservations and more.
       </Text>
 
-      <Button bg={"#9D7C49"} as={Link} color={"white"} to="/about">
+      <Button bg={"#9D7C49"} as={Link} color={"white"} to="/about-us">
         Read More
       </Button>
     </Box>
