@@ -100,6 +100,7 @@ const CenteredCardContainer = () => {
             width={{ base: "100%", sm: "45%", md: "30%" }} // Responsive width
             minH="200px"
             flexGrow={1}
+            maxW={'350px'}
           >
             <Image
               src={content.imageSrc}

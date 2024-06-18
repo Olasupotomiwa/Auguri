@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Container } from '@chakra-ui/react';
 import NavBar from './Homepage/NavBar';
 import Homepage from './Homepage';
+import Aboutpage from './AboutPage'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
      
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<Aboutpage />} />
         </Routes>
      
     </>

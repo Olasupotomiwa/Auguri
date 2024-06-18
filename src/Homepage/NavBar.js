@@ -1,4 +1,4 @@
-
+import React from 'react';
 import {
   Box,
   Flex,
@@ -8,27 +8,39 @@ import {
   Stack,
   Collapse,
   useDisclosure,
-  Image
+  Image,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, CalendarIcon, InfoOutlineIcon, PhoneIcon, AtSignIcon } from '@chakra-ui/icons';
-
+import { NavLink, useNavigate } from 'react-router-dom';
 import Logo from '../assets/Logo.png';
 
 export default function Navbar() {
-  const { isOpen, onToggle } = useDisclosure();
+  const { isOpen, onToggle, onClose } = useDisclosure();
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/');
+    onClose();
+  };
 
   return (
-    <Box fontFamily={"Poppins"} bg="white">
+    <Box
+      fontFamily={'Poppins'}
+      bg="white"
+      position="sticky"
+      top={0}
+      zIndex={1000}
+    >
       <Flex
         color="#000000"
         minH={'60px'}
         py={{ base: 2 }}
-        px={{ base: 2, md: 8 }}  // Adjusting padding for mobile and desktop
+        px={{ base: 2, md: 8 }} // Adjusting padding for mobile and desktop
         align={'center'}
         justify={{ base: 'space-between', md: 'center' }}
       >
         <Flex flex={{ base: 1, md: 'auto' }} align="center">
-          <Image src={Logo} h={'65px'} />
+          <Image src={Logo} h={'65px'} onClick={handleLogoClick} cursor="pointer" />
         </Flex>
         <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
           <DesktopNav />
@@ -49,7 +61,7 @@ export default function Navbar() {
             bg={'#9D7C49'}
             href={'#'}
             _hover={{
-              opacity: '0.9'
+              opacity: '0.9',
             }}
             display={{ base: 'none', md: 'inline-flex' }}
             ml={4}
@@ -61,7 +73,7 @@ export default function Navbar() {
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
-        <MobileNav />
+        <MobileNav onClose={onClose} />
       </Collapse>
     </Box>
   );
@@ -70,20 +82,24 @@ export default function Navbar() {
 const DesktopNav = () => {
   const linkColor = '#000000';
   const linkHoverColor = '#9D7C49';
+  const activeLinkColor = '#9D7C49';
 
   return (
     <Stack direction={'row'} spacing={4} justify={'center'}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
-          <Text
-            as="a"
-            p={2}
-            href={navItem.href ?? '#'}
-            fontSize={'18px'}
-            fontWeight={600}
-            color={linkColor}
-            display="flex"
-            alignItems="center"
+          <NavLink
+            to={navItem.href}
+            style={({ isActive }) => ({
+              padding: '8px 16px',
+              fontSize: '16px',
+              fontWeight: isActive ? 'bold' : 400,
+              color: isActive ? activeLinkColor : linkColor,
+              textDecoration: 'none',
+              display: 'flex',
+              alignItems: 'center',
+              transition: 'color 0.2s',
+            })}
             _hover={{
               textDecoration: 'none',
               color: linkHoverColor,
@@ -91,38 +107,40 @@ const DesktopNav = () => {
           >
             {navItem.icon}
             <Box ml={2}>{navItem.label}</Box>
-          </Text>
+          </NavLink>
         </Box>
       ))}
     </Stack>
   );
 };
 
-const MobileNav = () => {
+const MobileNav = ({ onClose }) => {
   const linkColor = '#000000';
   const linkHoverColor = '#9D7C49';
+  const activeLinkColor = '#9D7C49';
 
   return (
     <Stack bg="white" p={4} display={{ md: 'none' }}>
       {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label} py={2} display="flex" alignItems="center" _hover={{
-          textDecoration: 'none',
-          color: linkHoverColor,
-        }}>
-          {navItem.icon}
-          <Text
-            as="a"
-            href={navItem.href ?? '#'}
-            fontWeight={600}
-            color={linkColor}
+        <Box key={navItem.label} py={2} display="flex" alignItems="center" onClick={onClose}>
+          <NavLink
+            to={navItem.href}
+            style={({ isActive }) => ({
+              fontWeight: isActive ? 'bold' : 400,
+              color: isActive ? activeLinkColor : linkColor,
+              textDecoration: 'none',
+              display: 'flex',
+              alignItems: 'center',
+              transition: 'color 0.2s',
+            })}
             _hover={{
               textDecoration: 'none',
               color: linkHoverColor,
             }}
-            ml={2}
           >
-            {navItem.label}
-          </Text>
+            {navItem.icon}
+            <Text ml={2}>{navItem.label}</Text>
+          </NavLink>
         </Box>
       ))}
       <Button
@@ -138,6 +156,7 @@ const MobileNav = () => {
         mt={4}
         w={'full'}
         leftIcon={<CalendarIcon />}
+        onClick={onClose}
       >
         Book Now
       </Button>
