@@ -21,12 +21,12 @@ const CenteredCardContainer = () => {
     {
       imageSrc: Guide,
       heading: "Lawal Tour Guide",
-      text: "Our team of experts will take you off the beaten path and show you their city..",
+      text: "Lawal Tour Guide Agency excels at offering comprehensive travel experiences across multiple countries. They handle everything from airport pickups in Africa, Germany, Venice, and Rome to assisting you throughout your stay in each country. Their team of knowledgeable guides enriches your journey with in-depth insights and local expertise, ensuring a memorable and hassle-free trip. With Lawal Tour Guide Agency, every detail is meticulously planned for an unforgettable travel experience.",
     },
     {
       imageSrc: Cart,
       heading: "Personal Shopper",
-      text: "Enjoy personalized shopping with our expert personal shoppers, matching items to your unique style.",
+      text: "As experienced personal shoppers, we specialize in guiding foreigners through international outlets to find original goods at affordable prices. With extensive knowledge of local markets and brands, we ensure you get the best deals on high-quality items. Fluent in multiple languages and with a keen eye for fashion, we provide a seamless and enjoyable shopping experience tailored to your preferences. Let us make your shopping journey in a foreign land stress-free and rewarding.",
     },
     {
       imageSrc: Sport,
@@ -58,7 +58,7 @@ const CenteredCardContainer = () => {
       heading: "Visa Appointments",
       text: "Our team of experts will take care of all the matters concerning your visa acquisition to Shengen, Canada, USA",
     },
-   
+
     {
       imageSrc: Health,
       heading: "Internal Health Insurance",
@@ -101,7 +101,7 @@ const CenteredCardContainer = () => {
             width={{ base: "100%", sm: "45%", md: "30%" }} // Responsive width
             minH="200px"
             flexGrow={1}
-            maxW={'350px'}
+            maxW={"350px"}
             data-aos="fade-up"
             data-aos-duration="1500"
           >
