@@ -30,7 +30,7 @@ const CenteredCardContainer = () => {
     },
     {
       imageSrc: Sport,
-      heading: "Olajide Peter Global Sport Marketing",
+      heading: "Olajide P Global Enterprise Sports Marketing",
       text: "We offer elite programs in football, basketball, athletics, ensuring our athletes reach their full potential. Connected to national stadiums across Nigeria, including those in Lagos, Abeokuta, and beyond, we provide unparalleled access to top-tier facilities and coaching",
     },
     {
