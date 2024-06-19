@@ -6,6 +6,7 @@ import Homepage from './Homepage';
 import Aboutpage from './AboutPage'
 import ContactUs from './ContactUs'
 import ScrollToTop from './AboutPage/ScrollToTop';
+import Animation from './Animation'
 
 function App() {
   return (
@@ -13,13 +14,13 @@ function App() {
     <>
     <ScrollToTop />
       <NavBar />
-     
+     <Animation>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about-us" element={<Aboutpage />} />
           <Route path="/contact" element={<ContactUs />} />
         </Routes>
-     
+        </Animation>
     </>
     </Container>
   );

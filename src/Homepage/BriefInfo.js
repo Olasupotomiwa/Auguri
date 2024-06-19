@@ -10,11 +10,15 @@ const BriefInfo = () => {
       borderWidth="1px"
       borderRadius="md"
       fontFamily={"Poppins"}
+      data-aos="fade-up"
+      data-aos-duration="1500"
+       
     >
       <Heading fontFamily={"Reenie Beanie"} py={4} color={"#9D7C49"}>
         AUGURI
       </Heading>
-      <Text fontSize="16px" mb={2} textAlign={"justify"}>
+      <Text fontSize="16px" mb={2} textAlign={"justify"}data-aos="fade-up"
+      data-aos-duration="1500">
         Auguri Travel Agency stands out as a premier travel service provider,
         renowned for its expertise in helping travelers navigate new countries
         with ease. Whether you're traveling domestically or internationally, our
