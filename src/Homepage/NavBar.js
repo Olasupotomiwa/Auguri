@@ -60,13 +60,14 @@ export default function Navbar() {
             fontWeight={400}
             color={'white'}
             bg={'#9D7C49'}
-            href={'#'}
             _hover={{
               opacity: '0.9',
             }}
             display={{ base: 'none', md: 'inline-flex' }}
             ml={4}
             leftIcon={<FaCalendarCheck />}
+            href="https://wa.me/2348061759374"
+            target="_blank"
           >
             Book Now
           </Button>
@@ -150,7 +151,6 @@ const MobileNav = ({ onClose }) => {
         fontWeight={600}
         color={'white'}
         bg={'#9D7C49'}
-        href={'#'}
         _hover={{
           opacity: '0.9',
         }}
@@ -158,6 +158,9 @@ const MobileNav = ({ onClose }) => {
         w={'full'}
         leftIcon={<FaCalendarCheck />}
         onClick={onClose}
+        href="https://wa.me/2348061759374"
+        target="_blank"
+        
       >
         Book Now
       </Button>

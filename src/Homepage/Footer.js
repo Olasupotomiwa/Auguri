@@ -22,10 +22,15 @@ const Footer = () => {
         justify="space-between"
         w="100%"
         flexWrap="wrap"
-        direction={{base: 'column', md: 'row'}}
+        direction={{ base: "column", md: "row" }}
       >
         {/* First Part */}
-        <Flex flex={["none", "6"]} mb={[6, 0]} direction="column" align={["center", "flex-start"]}>
+        <Flex
+          flex={["none", "6"]}
+          mb={[6, 0]}
+          direction="column"
+          align={["center", "flex-start"]}
+        >
           <Image src={Logo} alt="Logo" mb={4} width={"200px"} />
           <Heading fontSize={"40px"} textAlign={["center", "left"]}>
             Travel Beyond Your Imagination With AUGURI TRAVEL AGENCY
@@ -38,7 +43,7 @@ const Footer = () => {
           mb={[6, 0]}
           direction="column"
           align={["center", "flex-start"]}
-          mt={'10'}
+          mt={"10"}
         >
           <Text fontSize="lg" fontWeight="bold" mb={4}>
             Address
@@ -63,14 +68,29 @@ const Footer = () => {
           mb={[6, 0]}
           direction="column"
           align={["center", "flex-start"]}
-          mt={'10'}
+          mt={"10"}
         >
           <Text fontSize="lg" fontWeight="bold" mb={4}>
             Contact Info
           </Text>
-          <Text textAlign={["center", "left"]}>Phone: +123 456 789</Text>
-          <Text textAlign={["center", "left"]}>Email: info@example.com</Text>
-          <Text textAlign={["center", "left"]}>Website: www.example.com</Text>
+          <Text textAlign={["center", "left"]} textDecoration={"underline"}>
+            Phone: <a href="tel:+393272067996">+39 327 206 7996</a>
+          </Text>
+          <Text textAlign={["center", "left"]} textDecoration={"underline"}>
+            Phone: <a href="tel:+2348061759375">+234 806 175 9375</a>
+          </Text>
+          <Text textAlign={["center", "left"]} textDecoration={"underline"}>
+            Email:{" "}
+            <a href="mailto:Auguritravelagent@yahoo.com">
+              Auguritravelagent@yahoo.com
+            </a>
+          </Text>
+          <Text textAlign={["center", "left"]} textDecoration={"underline"}>
+            Website:{" "}
+            <a href="https://auguritravelagent.com/">
+              https://auguritravelagent.com/
+            </a>
+          </Text>
         </Flex>
       </Flex>
     </Flex>

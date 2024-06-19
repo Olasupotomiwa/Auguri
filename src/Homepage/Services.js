@@ -29,6 +29,11 @@ const CenteredCardContainer = () => {
       text: "Enjoy personalized shopping with our expert personal shoppers, matching items to your unique style.",
     },
     {
+      imageSrc: Sport,
+      heading: "Olajide Peter Global Sport Marketing",
+      text: "We offer elite programs in football, basketball, athletics, ensuring our athletes reach their full potential. Connected to national stadiums across Nigeria, including those in Lagos, Abeokuta, and beyond, we provide unparalleled access to top-tier facilities and coaching",
+    },
+    {
       imageSrc: Ocean,
       heading: "Ocean Cruises",
       text: "Luxurious and comfortable way of travel, andpassengers can enjoy stunning views of the sea.",
@@ -53,11 +58,7 @@ const CenteredCardContainer = () => {
       heading: "Visa Appointments",
       text: "Our team of experts will take care of all the matters concerning your visa acquisition to Shengen, Canada, USA",
     },
-    {
-      imageSrc: Sport,
-      heading: "Sport Talent Hunting",
-      text: "We help hunt various talents in sports. Including; Football, Basketball, including sports training & Tour.",
-    },
+   
     {
       imageSrc: Health,
       heading: "Internal Health Insurance",

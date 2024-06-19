@@ -26,6 +26,9 @@ const LiveChatButton = () => {
         outline='0'
         _focus={{ outline: '0' }}
         _hover={{ outline: '0' }}
+        as='a'
+        href="https://wa.me/2348061759374"
+        target="_blank"
       >
         <Flex flexDirection="column" alignItems="center">
           <ChatIcon boxSize={{ base: '4', md: '6' }} />

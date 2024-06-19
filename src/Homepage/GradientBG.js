@@ -83,6 +83,10 @@ import {
             px={10}
             py={6}
             my={10}
+            href="https://wa.me/2348061759374"
+            target="_blank"
+            as={'a'}
+            _hover={{opacity: '0.9'}}
           >
            Book now
           </Button>

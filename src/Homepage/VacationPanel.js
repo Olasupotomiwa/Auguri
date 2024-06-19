@@ -22,14 +22,15 @@ const VacationPlanner = () => {
         custom-tailored itinerary that exceeds your expectations.
       </Text>
       <Button
-        size="lg"
-        w={"127px"}
-        bg="#9D7C49"
-        color="white"
-        _hover={{ opacity: '0.9' }}
-      >
-        Book
-      </Button>
+  size="lg"
+  w={"127px"}
+  bg="#9D7C49"
+  color="white"
+  _hover={{ opacity: '0.9' }}
+  as="a"
+  href="https://wa.me/2348061759374"
+  target="_blank"
+>Book</Button>
     </Flex>
   );
 };
