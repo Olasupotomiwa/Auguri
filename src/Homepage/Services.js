@@ -13,11 +13,7 @@ import Cart from "../assets/cart.png";
 
 const CenteredCardContainer = () => {
   const [cardContent] = useState([
-    {
-      imageSrc: Airline,
-      heading: "Airline Tickets",
-      text: "Our Travel Agency specializes in providing customers with the best deals on airline tickets",
-    },
+   
     {
       imageSrc: Guide,
       heading: "Lawal Tour Guide",
@@ -32,6 +28,11 @@ const CenteredCardContainer = () => {
       imageSrc: Sport,
       heading: "Olajide P Global Enterprise Sports Marketing",
       text: "We offer elite programs in football, basketball, athletics, ensuring our athletes reach their full potential. Connected to national stadiums across Nigeria, including those in Lagos, Abeokuta, and beyond, we provide unparalleled access to top-tier facilities and coaching",
+    },
+    {
+      imageSrc: Airline,
+      heading: "Airline Tickets",
+      text: "Our Travel Agency specializes in providing customers with the best deals on airline tickets",
     },
     {
       imageSrc: Ocean,
@@ -85,7 +86,7 @@ const CenteredCardContainer = () => {
       <Box
         display="flex"
         flexWrap={"wrap"}
-        alignItems="center"
+       
         mt={8}
         justifyContent={"center"}
         fontFamily={"Poppins"}
