@@ -59,6 +59,8 @@ const TestimonialPage = () => {
       fontFamily="Poppins"
       padding={{ base: "2", md: "6" }}
       my={10}
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
       <Box maxWidth="540px" width="100%" p={0} {...handlers}>
         <Box p={8} mt={20} textAlign={"center"}>
@@ -69,7 +71,8 @@ const TestimonialPage = () => {
             See What Our Clients Say About Us
           </Heading>
         </Box>
-        <Box position="relative">
+        <Box position="relative"  data-aos="fade-up"
+      data-aos-duration="1500">
           <Carousel
             selectedItem={selectedSlide}
             onChange={(index) => setSelectedSlide(index)}

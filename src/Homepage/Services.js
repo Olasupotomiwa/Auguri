@@ -102,6 +102,8 @@ const CenteredCardContainer = () => {
             minH="200px"
             flexGrow={1}
             maxW={'350px'}
+            data-aos="fade-up"
+            data-aos-duration="1500"
           >
             <Image
               src={content.imageSrc}

@@ -29,6 +29,8 @@ const LiveChatButton = () => {
         as='a'
         href="https://wa.me/2348061759374"
         target="_blank"
+        data-aos="fade-up"
+        data-aos-duration="1500"
       >
         <Flex flexDirection="column" alignItems="center">
           <ChatIcon boxSize={{ base: '4', md: '6' }} />

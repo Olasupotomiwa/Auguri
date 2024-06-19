@@ -14,7 +14,8 @@ import {
   
   const GradientComponent = () => {
     return (
-        <Box py={8} bg={"#f2f2f2"}>
+        <Box py={8} bg={"#f2f2f2"}  data-aos="fade-up"
+        data-aos-duration="1500">
       <Box
        h='auto'
         display="flex"
