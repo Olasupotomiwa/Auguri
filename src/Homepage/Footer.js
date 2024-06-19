@@ -49,8 +49,8 @@ const Footer = () => {
             Address
           </Text>
           <Text textAlign={["center", "left"]}>
-            123 Main Street,
-            <br /> Cityville, State, 12345
+            Via Col Di Lana 20 Milan, Italy.
+            <br /> Victoria Island Lagos, Nigeria
           </Text>
           <Flex mt={4} align="center" justify={["center", "flex-start"]}>
             <Link href="#" isExternal mr={2}>
