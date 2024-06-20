@@ -27,7 +27,7 @@ const LiveChatButton = () => {
         _focus={{ outline: '0' }}
         _hover={{ outline: '0' }}
         as='a'
-        href="https://wa.me/2348061759374"
+        href="https://wa.me/393272067996"
         target="_blank"
         data-aos="fade-up"
         data-aos-duration="1500"

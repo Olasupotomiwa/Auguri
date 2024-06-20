@@ -60,7 +60,7 @@ const VacationSection = () => {
               px={10}
               py={6}
               as="a"
-              href="https://wa.me/2348061759374"
+              href="https://wa.me/393272067996"
               target="_blank"
               _hover={{opacity: '0.9'}}
             >
@@ -81,7 +81,7 @@ const VacationSection = () => {
             py={6}
             as="a"
             _hover={{opacity: '0.9'}}
-            href="https://wa.me/2348061759374"
+            href="https://wa.me/393272067996"
             target="_blank"
           >
             Proceed to book
