@@ -74,7 +74,7 @@ const Footer = () => {
             Contact Info
           </Text>
           <Text textAlign={["center", "left"]} textDecoration={"underline"}>
-            Phone: <a href="tel:+393272067996">+39 327 206 7996</a>
+            Phone: <a href="tel:+393500460774">+39 350 046 0774</a>
           </Text>
           <Text textAlign={["center", "left"]} textDecoration={"underline"}>
             Phone: <a href="tel:+2348061759374">+234 806 175 9374</a>
