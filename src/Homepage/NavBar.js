@@ -66,7 +66,7 @@ export default function Navbar() {
             display={{ base: 'none', md: 'inline-flex' }}
             ml={4}
             leftIcon={<FaCalendarCheck />}
-            href="https://wa.me/393272067996"
+            href="https://wa.me/393500460774"
             target="_blank"
           >
             Book Now
@@ -158,7 +158,7 @@ const MobileNav = ({ onClose }) => {
         w={'full'}
         leftIcon={<FaCalendarCheck />}
         onClick={onClose}
-        href="https://wa.me/393272067996"
+        href="https://wa.me/393500460774"
         target="_blank"
         
       >

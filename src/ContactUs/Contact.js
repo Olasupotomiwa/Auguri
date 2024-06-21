@@ -14,9 +14,10 @@ const ContactUs = () => {
                     <Icon as={FaMapMarkerAlt} boxSize="1.5rem" color={iconColor} mr="4" />
                     <Heading as="h2" size="lg" fontFamily={"Francois One"}>Location</Heading>
                 </Flex>
-                <Text p={4}>
-                    No 12, lorem ipsum street Lagos Nigeria No 12, lorem ipsum street Lagos Nigeria No 12, lorem ipsum street Lagos Nigeria
-                </Text>
+                <Text textAlign={["center", "left"]} p={4}>
+            Via Col Di Lana 20 Milan, Italy.
+            <br /> Victoria Island Lagos, Nigeria
+          </Text>
             </Box>
             <Box flex="1"  mb={10}>
                 <Flex align="center" mb="4">

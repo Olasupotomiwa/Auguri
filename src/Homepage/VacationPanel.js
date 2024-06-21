@@ -28,7 +28,7 @@ const VacationPlanner = () => {
   color="white"
   _hover={{ opacity: '0.9' }}
   as="a"
-  href="https://wa.me/393272067996"
+  href="https://wa.me/393500460774"
   target="_blank"
 >Book</Button>
     </Flex>

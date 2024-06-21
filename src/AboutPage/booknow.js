@@ -40,7 +40,7 @@ const BookNowPanel = () => {
             color="white"
             bg="#9D7C49"
             fontFamily={"Poppins"}
-            href="https://wa.me/393272067996"
+            href="https://wa.me/393500460774"
             target="_blank"
             as={'a'}
             _hover={{opacity: '0.9'}}
