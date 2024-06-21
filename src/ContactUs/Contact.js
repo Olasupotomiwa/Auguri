@@ -14,7 +14,7 @@ const ContactUs = () => {
                     <Icon as={FaMapMarkerAlt} boxSize="1.5rem" color={iconColor} mr="4" />
                     <Heading as="h2" size="lg" fontFamily={"Francois One"}>Location</Heading>
                 </Flex>
-                <Text textAlign={["center", "left"]} p={4}>
+                <Text textAlign="left" p={4}>
             Via Col Di Lana 20 Milan, Italy.
             <br /> Victoria Island Lagos, Nigeria
           </Text>
