@@ -25,7 +25,7 @@ const ContactUs = () => {
                     <Heading as="h2" size="lg" fontFamily={"Francois One"}>Give Us a Call</Heading>
                 </Flex>
                 <Text fontWeight={'bold'}>Mobile No</Text>
-                <Text>+234 858 374 4747</Text>
+                <Text>+39 350 046 0774</Text>
                 <Text fontWeight={'bold'}>Office No</Text>
                 <Text>+234 858 374 4747</Text>
             </Box>
