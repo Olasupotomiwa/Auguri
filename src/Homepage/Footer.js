@@ -70,14 +70,20 @@ const Footer = () => {
           align={["center", "flex-start"]}
           mt={"10"}
         >
+        
           <Text fontSize="lg" fontWeight="bold" mb={4}>
             Contact Info
           </Text>
           <Text textAlign={["center", "left"]} textDecoration={"underline"}>
             Phone: <a href="tel:+393500460774">+39 350 046 0774</a>
+    
+        </Text>
+
+            <Text textAlign={["center", "left"]} textDecoration={"underline"}>
+            Phone: <a href="tel:+393930569183">+39 393 0569183</a>
           </Text>
           <Text textAlign={["center", "left"]} textDecoration={"underline"}>
-            Phone: <a href="tel:+2348061759374">+234 806 175 9374</a>
+            Phone: <a href="tel:+234707544036">+234 70 754 403 6</a>
           </Text>
           <Text textAlign={["center", "left"]} textDecoration={"underline"}>
             Email:{" "}
